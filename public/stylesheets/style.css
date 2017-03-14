@@ -1,0 +1,40 @@
+body {
+  background-color: #2196f3;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+a {
+  color: #2196f3;
+}
+
+.header-one {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-light:hover {
+  color:#26A69A;
+  transition-duration: 1s;
+
+}
+
+.header-light {
+  color:#2196f3;
+    transition-duration: 1s;
+
+}
+
+.badman:hover {
+
+  background-color: #26A69A;
+
+}
+
+.badman {
+
+   background-color:#2196f3;
+   transition-duration: 1s;
+}

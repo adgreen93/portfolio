@@ -1,0 +1,392 @@
+	
+
+	.navbar.navbar-default.navbar-fixed-top {
+    	background-color: transparent;
+   		background: transparent;
+   		border-color: transparent;
+	}
+
+	.navbar li { 
+
+		color: #000 
+
+	} 
+
+body {
+		font-family: 'Roboto', sans-serif;
+	
+
+	}
+
+	#header {
+		
+		font-size: 1cm;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.top {
+		height: 700px;
+		width: 100%;
+	    	background:  #00111a;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+
+	}
+
+		.top img {
+
+		padding-top: 200px;
+		max-width: 100%;
+		
+		}
+
+	
+	.box1 {
+		
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 50px;
+		font-family: 'Roboto', sans-serif;
+		
+		
+	}
+
+	.box2 {
+		
+		width: 100%;
+		height: 75px;
+		 background:  #555;
+		text-align: center;
+
+	}
+	
+	.fa-angle-down {
+	color: white;
+	}
+	
+
+	.box3 {
+		
+		width: 100%;
+		height: 75px;
+		padding-bottom: 50px;
+		text-align:center;
+		background-image: url('alcowall1.jpg');
+		background-repeat: no-repeat;
+		  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+		
+	}
+
+
+
+	.box4 {
+		
+		width: 100%;
+		background: #fff;
+		padding-top: 50px;
+		text-align:center;
+	
+
+	}
+
+	.box5 {
+		
+		width: 100%;
+		 background:  #00111a;
+		padding-bottom: 50px;
+		text-align:center;
+		background: #fff;
+		
+	}
+
+		.box5 img {
+		display: inline-block;
+	}
+	.box6 {
+		
+		width: 100%;
+		background: #fff;
+		background-repeat: no-repeat;
+		  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+		padding-top: 50px;
+		color: black;
+		padding-bottom: 100px;
+	}
+
+		.box7 {
+		
+		width: 100%;
+		height: 300px;
+		padding-bottom: 50px;
+		text-align:center;
+		background-image: url('alcowall1.jpg');
+		background-repeat: no-repeat;
+		  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+		
+	}
+
+
+.btn {
+
+	transition: all 0.3s ease-in;
+    text-decoration:none;
+    font-size: 25px;
+ 	display: inline-block;
+ 	border-radius:0;
+ 	color: #6496c8;
+ 	background: rgba(0,0,0,0);
+  	border: solid 3px #6496c8;
+}
+
+.btn:hover {
+
+	-webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+    border-color: #346392;
+  color: white;
+}
+
+
+.circle{
+  width: 150px;
+  height: 150px;
+   background-repeat: no-repeat;
+   border-radius: 50%;
+   display: inline-block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  /* -webkit-clip-path: circle(50% );
+  clip-path: circle(50%);
+  -webkit-transition: -webkit-clip-path .6s ease-out; 
+  transition: -webkit-clip-path .6s ease-out; /* needs to be prefixed otherwise it's not transitioned in Chrome */
+  /* transition: clip-path .6s ease-out; */
+
+}
+
+
+.logo{
+
+  -webkit-animation-duration: 2s;
+  
+}
+
+ .bottom {
+
+		background:  #00111a;
+	text-align: center;
+	color: white;
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+#owl-demo2 .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.dark {
+
+    background: #303030;
+
+}
+
+.dark img {
+    display: block;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.dark:hover img {
+    opacity: 0.5;
+}
+
+.dark:hover .txt {
+	visibility: visible;
+  opacity: 1;
+  transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.dark .txt {
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #92bedb;
+	z-index: 2;
+}
+
+
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 45%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+	background-color: #3659b0;
+	text-decoration: none;
+}
+
+/* Effects */
+.overlay-door {
+	visibility: hidden;
+	width: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
+	transition: width 0.5s 0.3s, visibility 0s 0.8s;
+}
+
+.overlay-door.open {
+	visibility: visible;
+	width: 100%;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.overlay-door nav {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.overlay-door nav,
+.overlay-door .overlay-close {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.overlay-door.open nav,
+.overlay-door.open .overlay-close {
+	opacity: 1;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.overlay-door.close nav,
+.overlay-door.close .overlay-close {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+	
+	.bottom img {
+	height:75%;
+	width:75%;
+	
+	}
+	
+	.box8 img {
+	height:75%;
+	width: 75%;
+	}
+}

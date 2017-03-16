@@ -6,18 +6,23 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/angular', function(req, res) {
+  res.sendfile('./views/index.html');
+});
+
 var db = require('../queries');
 
 router.get('/api/puppies', db.getAllPuppies);
+
 router.get('/api/puppies/:id', db.getSinglePuppy);
 router.post('/api/puppies', db.createPuppy);
 router.put('/api/puppies/:id', db.updatePuppy);
 router.delete('/api/puppies/:id', db.removePuppy);
 
-router.post('/api/build', function(req, res, next){
-  db.createPuppy
+//angular routes here
+router.get('/api/puppiesalt', db.getAllPuppiesAlt);
 
-});
+router.post('/api/puppiesalt', db.createPuppyAlt);
 
 router.post('/charge', function(req, res, next){
   var stripe = require("stripe")("sk_test_0B6jqeCbWYS774x1h9hDVmuV");

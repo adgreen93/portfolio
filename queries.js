@@ -27,15 +27,25 @@ function getAllPuppies(req, res, next) {
     });
 }
 
-function getSinglePuppy(req, res, next) {
-  var pupID = parseInt(req.params.id);
-  db.one('select * from pups where id = $1', pupID)
+function getAllPuppiesAlt(req, res, next) {
+  db.any('select * from pups')
     .then(function (data) {
-      res.status(200)
-        .json({
+      res.json(data);
+    })
+    .catch(function (err) {
+      return next(err);
+    });
+}
+
+function createPuppyAlt(req, res, next) {
+  req.body.age = parseInt(req.body.formData.age);
+  db.none('insert into pups(name, breed, age, sex)' +
+      'values(${name}, ${breed}, ${age}, ${sex})',
+    req.body.formData)
+    .then(function () {
+      res.json({
           status: 'success',
-          data: data,
-          message: 'Retrieved ONE puppy'
+          message: 'Inserted one puppy'
         });
     })
     .catch(function (err) {
@@ -59,6 +69,24 @@ function createPuppy(req, res, next) {
       return next(err);
     });
 }
+
+function getSinglePuppy(req, res, next) {
+  var pupID = parseInt(req.params.id);
+  db.one('select * from pups where id = $1', pupID)
+    .then(function (data) {
+      res.status(200)
+        .json({
+          status: 'success',
+          data: data,
+          message: 'Retrieved ONE puppy'
+        });
+    })
+    .catch(function (err) {
+      return next(err);
+    });
+}
+
+
 
 function updatePuppy(req, res, next) {
   db.none('update pups set name=$1, breed=$2, age=$3, sex=$4 where id=$5',
@@ -95,8 +123,10 @@ function removePuppy(req, res, next) {
 
 module.exports = {
   getAllPuppies: getAllPuppies,
+  getAllPuppiesAlt: getAllPuppiesAlt,
   getSinglePuppy: getSinglePuppy,
   createPuppy: createPuppy,
+  createPuppyAlt: createPuppyAlt,
   updatePuppy: updatePuppy,
   removePuppy: removePuppy
 };

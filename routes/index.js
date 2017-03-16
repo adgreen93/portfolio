@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/portfolio', function(req, res, next) {
+  res.render('portfolio');
+});
+
 router.get('/angular', function(req, res) {
   res.sendfile('./views/index.html');
 });

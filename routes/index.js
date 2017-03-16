@@ -6,6 +6,19 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+var db = require('../queries');
+
+router.get('/api/puppies', db.getAllPuppies);
+router.get('/api/puppies/:id', db.getSinglePuppy);
+router.post('/api/puppies', db.createPuppy);
+router.put('/api/puppies/:id', db.updatePuppy);
+router.delete('/api/puppies/:id', db.removePuppy);
+
+router.post('/api/build', function(req, res, next){
+  db.createPuppy
+
+});
+
 router.post('/charge', function(req, res, next){
   var stripe = require("stripe")("sk_test_0B6jqeCbWYS774x1h9hDVmuV");
 
@@ -28,21 +41,6 @@ var charge = stripe.charges.create({
 });
 });
 
-// this is the smart checkout that we'll be working on
-stripe.customers.create({
-  email: "paying.user@example.com",
-  source: token,
-}).then(function(customer) {
-  // YOUR CODE: Save the customer ID and other info in a database for later.
-  return stripe.charges.create({
-    amount: 1000,
-    currency: "usd",
-    description: "Example charge",
-    customer: customer.id,
-  });
-}).then(function(charge) {
-  // Use and save the charge info.
-    res.send('success')
-});
+
 
 module.exports = router;

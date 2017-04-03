@@ -19,6 +19,24 @@ body {
 	display: none;
 }
 
+.bottlebtn {
+  border-radius:0px;
+  background:none;
+  border: 1px solid #311B92;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+}
+
+.bottlebtn:hover {
+
+  border-radius:0px;
+  background:#206ce8;
+  border: 1px solid #206ce8;
+  color:white;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+
+}
 .select_style
 {
 
@@ -68,6 +86,42 @@ body {
   animation-delay: 1s;
 
 }
+
+
+.navbar-toggle-three{
+
+  position:relative;
+  float:right;
+  padding:10px 10px;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+
+  margin-right:15px;
+
+}
+
+.bagbtn:hover {
+
+  background-color: #206ce8;
+  border: 1px solid #206ce8;
+  -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+
+}
+
+.bagbtn {
+
+  border-radius: 25px;
+  background-color:#311B92;
+  border: 1px solid #311B92;
+  font-weight:300;
+  -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+
+
+}
+
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;

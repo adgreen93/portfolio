@@ -54,7 +54,7 @@
 
       <div style="height:20px;"></div>
         <!--Footer Links-->
-        <div class="container-fluid" style="text-align:center;">
+        <div class="container-fluid hidden-xs" style="text-align:center;">
             <div class="row">
               <div class="col-md-2 col-md-offset-1">
                   <div style="height:20px;"></div>
@@ -104,6 +104,59 @@
             </div>
         </div>
 
+
+        <div class="container-fluid visible-xs" style="text-align:center;">
+            <div class="row">
+
+              <div class="col-md-2" style="text-align:center;">
+                <svg width="46" height="58" viewBox="0 0 46 58" xmlns="http://www.w3.org/2000/svg">
+                        <title>Illustrated Mug</title>
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M17.513 26.456c-7.593 0-15.296-1.328-15.296-3.873 0-2.546 7.703-3.874 15.296-3.874 7.593 0 15.297 1.328 15.297 3.874 0 2.545-7.704 3.873-15.297 3.873zm0-6.696c-8.701 0-14.299 1.716-14.299 2.878 0 1.162 5.543 2.878 14.3 2.878 8.756 0 14.298-1.716 14.298-2.878 0-1.162-5.598-2.878-14.299-2.878z" fill="#555"></path>
+                          <g fill="#311B92">
+                            <path d="M4.323 24.464c2.438 1.107 7.426 1.826 13.19 1.826 5.764 0 10.752-.774 13.19-1.826-2.438-1.107-7.426-1.881-13.19-1.881-5.764 0-10.752.774-13.19 1.881z"></path>
+                            <path d="M5.764 24.464c2.716.83 7.094 1.328 11.75 1.328 4.655 0 9.033-.498 11.749-1.328-2.716-.83-7.094-1.328-11.75-1.328-4.655 0-9.033.498-11.75 1.328z"></path>
+                          </g>
+
+                          <path d="M17.624 57.668c-6.595 0-12.304-1.494-14.964-3.93-.332-.276-.499-.663-.499-1.106C2.161 52.355.5 23.966.5 22.582c0-4.703 11.75-5.201 16.793-5.201h1.33c2.826 0 12.303.22 15.074 3.154.555.609.832 1.328.776 2.103-.055.83-.166 2.213-.221 3.984 1.607-1.106 3.491-1.715 5.376-1.715 2.272 0 4.156.885 5.154 2.49 2.272 3.486 1.108 9.242-1.386 12.839-2.272 3.265-7.37 6.253-10.308 7.139l-.277 5.257c-.056.553-.277 1.051-.665 1.384-2.66 2.268-8.092 3.652-14.52 3.652zm-.277-39.291c-7.26 0-15.795 1.106-15.795 4.206 0 1.106 1.164 22.025 1.662 29.994 0 .11.056.276.167.442 2.438 2.27 7.925 3.653 14.299 3.653 6.096 0 11.416-1.328 13.91-3.487a.916.916 0 0 0 .277-.664l.278-5.976.332-.111c2.66-.664 7.925-3.708 10.087-6.807 2.272-3.32 3.436-8.577 1.385-11.732-.83-1.273-2.438-2.047-4.322-2.047-1.996 0-4.046.774-5.598 2.213l-.887.83.056-1.217c.11-2.27.221-4.095.277-5.091.055-.499-.167-.941-.5-1.329-1.939-2.103-8.7-2.822-14.298-2.822h-.61c-.055-.055-.277-.055-.72-.055z" fill="#311B92"></path>
+                          <path d="M32.868 31.495l-.647 12.39s8.321-1.558 10.841-8.5c2.52-6.943-3.543-8.807-6.34-7.174-2.798 1.634-3.854 3.284-3.854 3.284zm.825.424l-.598 10.586s6.56-1.548 8.922-7.524c2.362-5.976-3.019-7.192-5.14-5.776-2.122 1.416-3.184 2.714-3.184 2.714z" fill="#555"></path>
+
+                        </g>
+                      </svg>
+              </div>
+              <div class="col-md-2 col-md-offset-1">
+                  <div style="height:20px;"></div>
+                  <p style="font-size: 20px;"><a href="https://www.linkedin.com/in/alexander-green-38b475133/">LinkedIn</a>
+            </p>
+              </div>
+
+              <div class="col-md-2">
+                  <div style="height:20px;"></div>
+                  <p style="font-size: 20px;"><a href="https://wwww.medium.com/@alexggreen">Blog</a>
+            </p>
+              </div>
+                <!--First column-->
+
+                <!--/.First column-->
+
+                <!--Second column-->
+
+                <!--/.Second column-->
+                <div class="col-md-2">
+                    <div style="height:20px;"></div>
+                <p style="font-size: 20px;"><a href="http://www.alexandergreen.me">Alexander Green</a></p>
+                </div>
+
+                <div class="col-md-2">
+                    <div style="height:20px;"></div>
+                <p style="font-size: 20px;"><a href="https://www.behance.net/adgreen93b0b4">Design Portfolio</a></p>
+
+                </div>
+
+
+            </div>
+        </div>
+
 <div style="height:20px;"></div>
     </footer>
 
@@ -112,9 +165,9 @@
     $(document).ready(function(){
         $(window).scroll(function(){
             if ($(this).scrollTop() > 800) {
-                $('.navbar').fadeIn(500);
+                $('.hidden-xs').fadeIn(500);
             } else {
-                $('.navbar').fadeOut(500);
+                $('.hidden-xs').fadeOut(500);
             }
         });
     });

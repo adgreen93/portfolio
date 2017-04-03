@@ -1,40 +1,88 @@
 body {
-  background-color: #2196f3;
+
 }
 
+.main {
+  background-image: url("https://s3.amazonaws.com/nori-cold-brew/nori-cold-brew-background.png");
+  height: 800px;
+
+}
+
+.section1 {
+  background-color: #fafafa;
+  color:#311B92;
+
+}
+
+.navbar {
+
+	display: none;
+}
+
+.select_style
+{
+
+	overflow: hidden;
+	display: inline-block;
+	color: #311B92;
+
+	-webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(123,123,123,.2);
+	box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+
+	position: relative;
+	cursor: pointer;
+	padding-right:20px;
+
+  border-radius:0px; background:none;  border: 1px solid #311B92;
+
+}
+.select_style span
+{
+	position: absolute;
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	background: url(http://projects.authenticstyle.co.uk/niceselect/arrow.png) no-repeat;
+	top: 50%;
+	margin-top: -4px;
+}
+.select_style select
+{
+	-webkit-appearance: none;
+	appearance:none;
+	width:120%;
+	background:none;
+	background:transparent;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:7px 10px;
+}
+
+.email-footer {
+    background-image: url("https://s3.amazonaws.com/nori-cold-brew/nori-cold-brew-background.png");
+}
+.header-image {
+  animation-duration: 2s;
+  animation-delay: 1s;
+
+}
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+
+}
+.header {
+  font-size: 35px;
+}
+h1 {
+  font-family: 'Monserrat', sans-serif;
+    font-size: 25px;
+
+
 }
 
 a {
   color: #2196f3;
-}
-
-.header-one {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.header-light:hover {
-  color:#26A69A;
-  transition-duration: 1s;
-
-}
-
-.header-light {
-  color:#2196f3;
-    transition-duration: 1s;
-
-}
-
-.badman:hover {
-
-  background-color: #26A69A;
-
-}
-
-.badman {
-
-   background-color:#2196f3;
-   transition-duration: 1s;
 }
